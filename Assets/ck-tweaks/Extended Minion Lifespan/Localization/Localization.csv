@@ -1,0 +1,4 @@
+Key	Type	Desc	English
+FXCPDS/Minions/Lifespan/Label	Text		Minion Lifespan
+FXCPDS/Minions/Lifespan/Seconds	Text		{0}s
+FXCPDS/Minions/Lifespan/Infinite	Text		Infinite

@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc43e4983a160e543856e5ba0421c9e1, type: 3}
+  m_Name: Extended Minion Lifespan
+  m_EditorClassIdentifier: 
+  metadata:
+    guid: 979e6716f2b04a50b2ba85016dc5db48
+    name: Extended Minion Lifespan
+    skipSafetyChecks: 0
+    disableScripts: 0
+    accessesExtraAssemblies: 1
+    disableHarmonyPatching: 0
+    requiredOn: 0
+    files:
+    - path: Localization/Localization.csv
+    - path: Scripts/PugTextEffectJuicyAppearPatch.cs
+    - path: Scripts/MinionSystem.cs
+    - path: Scripts/MinionExtensionsPatch.cs
+    - path: Scripts/LifespanMenuOption.cs
+    - path: Scripts/ExtendedMinionLifespan.cs
+    - path: Scripts/Generated/MinionSystem__System_21393575720.g.cs
+    - path: Bundles/Extended Minion Lifespan_Linux.assetbundle
+    - path: Bundles/Extended Minion Lifespan_Windows.assetbundle
+    dependencies: []
+  modPath: Assets/ck-tweaks/Extended Minion Lifespan
+  forceReimport: 1
+  buildBundles: 1
+  cacheBundles: 0
+  buildLinux: 1
+  assets:
+  - path: Assets/ck-tweaks/Extended Minion Lifespan/LifespanMenuOption.prefab
+    hash: 013ECB888BBC6E327FA965B3710B132BC1481A28456DFEC8858CE1B14A7A6F11
+  - path: Assets/ck-tweaks/Extended Minion Lifespan/Localization/Localization.csv
+    hash: 7AAB672B7D7A1860AB5885068EB4B6FA049E6D1DEA56F9360E6E3519274353CC
+  lastBuildLinux: 1
