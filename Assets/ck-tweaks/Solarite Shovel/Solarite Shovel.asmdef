@@ -21,6 +21,7 @@
     "allowUnsafeCode": false,
     "overrideReferences": true,
     "precompiledReferences": [
+        "0Harmony.dll",
         "Animation.Authoring.dll",
         "Animation.Components.dll",
         "Animation.Converters.dll",

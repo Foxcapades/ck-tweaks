@@ -57,8 +57,8 @@ MonoBehaviour:
   isArmor: 0
   givesConditionsWhenEquipped:
   - id: 174
-    valueMultiplier: 1.6
-    value: 355
+    valueMultiplier: 1.4
+    value: 310
   level: {fileID: 3994890349865643648}
   conditionsTable: {fileID: 11400000, guid: b75ab2cc664d2876cbac0c6bd3f688be, type: 2}
 --- !u!114 &3585851206922772673
@@ -167,7 +167,7 @@ MonoBehaviour:
   objectName: SolariteShovel:SolariteShovel
   initialAmount: 750
   variation: 0
-  variationIsDynamic: 0
+  variationIsDynamic: 1
   variationToToggleTo: 0
   objectType: 600
   tags: 1900000022000000
@@ -187,11 +187,11 @@ MonoBehaviour:
   m_Script: {fileID: 244469479, guid: 9a1db145e9314404d8da91bdc1557235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sellValue: -1
+  sellValue: 325
   buyValueMultiplier: 1
-  icon: {fileID: 21300000, guid: 9a7b6626eafdc7aa38f5d96e0a00f5e8, type: 2}
+  icon: {fileID: 1591100458, guid: 75fe9a56214259e96b12a1590f23908b, type: 3}
   iconOffset: {x: 0, y: -0.125}
-  smallIcon: {fileID: 21300000, guid: 9a7b6626eafdc7aa38f5d96e0a00f5e8, type: 2}
+  smallIcon: {fileID: 1591100458, guid: 75fe9a56214259e96b12a1590f23908b, type: 3}
   isStackable: 0
   requiredObjectsToCraft:
   - objectName: SolariteBar
