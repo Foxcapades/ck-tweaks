@@ -1,0 +1,33 @@
+= FXCPDS Core Keeper Mods
+
+Central repository for the mods I have created for the game
+link:https://en.wikipedia.org/wiki/Core_Keeper[Core Keeper].
+
+The individual mods are broken up by directory under the link:Assets/ck-tweaks[]
+directory.
+
+== Development
+
+[WARNING]
+This project was assembled on a linux based machine.  There may be unexpected
+quirks or difficulties if developed on Windows.
+
+=== Cloning
+
+This repository is a subset of files my own mod-specific files extracted from a
+Unity project based on link:https://github.com/Pugstorm/CoreKeeperModSDK[the official modding SDK].
+
+Since this repository does not contain the contents of the full SDK repository,
+cloning this project directly into an existing SDK Unity project directory.
+
+The easiest approach to getting the files from this repository into the SDK
+Unity project is to download a zip of this repository's contents and extract it
+into the root directory of the SDK Unity project.
+
+==== Slim Repo
+
+In the off chance you wish to maintain a slim repo similar to this one, the best
+approach is to create a fork of this repo, clone from your fork into a temp
+directory, then copy the contents of that temp directory into the root of the
+SDK Unity project, making sure to include the `.git` directory, and `.gitignore`
+file.
