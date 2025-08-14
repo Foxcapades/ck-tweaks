@@ -1,0 +1,30 @@
+﻿{
+    "name": "all-skill-perks",
+    "references": [
+        "Unity.Burst",
+        "Unity.Collections",
+        "Unity.Entities",
+        "Unity.Entities.Hybrid",
+        "Unity.Mathematics",
+        "Unity.NetCode",
+        "Unity.NetCode.Physics",
+        "Unity.Networking.Transport",
+        "Unity.Physics",
+        "Unity.Physics.Hybrid",
+        "Unity.Transforms",
+        "PugMod.SDK"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "0Harmony.dll",
+        "Pug.Base.dll",
+        "Pug.Other.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "useGUIDs": false
+}
