@@ -27,6 +27,11 @@ namespace FXCPDS.Content.MoreEquipment {
       inactiveColor = sibling.inactiveColor;
       icon.material = sibling.icon.material;
       SetActive(false);
+
+      transform.GetChild(1)
+        .GetChild(1)
+        .GetComponent<SpriteRenderer>()
+        .material = sibling.icon.material;
     }
 
     /// <summary>
