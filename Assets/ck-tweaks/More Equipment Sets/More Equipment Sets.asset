@@ -20,12 +20,36 @@ MonoBehaviour:
     accessesExtraAssemblies: 1
     disableHarmonyPatching: 0
     requiredOn: 0
-    files: []
+    files:
+    - path: Scripts/Scripts/MoreEquipmentSets.cs
+    - path: Scripts/Scripts/ExtendedTab.cs
+    - path: Bundles/More Equipment Sets_Linux.assetbundle
+    - path: Bundles/More Equipment Sets_Windows.assetbundle
     dependencies: []
   modPath: Assets/ck-tweaks/More Equipment Sets
   forceReimport: 1
   buildBundles: 1
-  cacheBundles: 0
+  cacheBundles: 1
   buildLinux: 1
-  assets: []
-  lastBuildLinux: 0
+  assets:
+  - path: Assets/ck-tweaks/More Equipment Sets/Animations/flash_noMovement.anim
+    hash: 9EE2A33CAA8A4C52C2CEDDE81D44B1735E17401821C265A3CAEEBFBF0403B544
+  - path: Assets/ck-tweaks/More Equipment Sets/Controllers/LightUpHintIcon_noMovement.controller
+    hash: CF5EDF7E482A589530C39EAC0C3572B850F278F8C8D1EA2E1606D117FD47E1AF
+  - path: Assets/ck-tweaks/More Equipment Sets/Materials/UISpriteAmplify.mat
+    hash: 303B3E5178FC35CC86B6FCE4E45833109E45D082EE80CC80C7A285EB5F0F1B25
+  - path: Assets/ck-tweaks/More Equipment Sets/More Equipment Sets.asset
+    hash: F628E988393A2236A18D7472DDE288EE6FA00C7982AA66111E3E5B50F2017338
+  - path: Assets/ck-tweaks/More Equipment Sets/More Equipment Sets_modio.asset
+    hash: 3E34E4F568417310F8AA21D6C0BAE8B01639785F87DF5E3674C81ADB689A39E9
+  - path: Assets/ck-tweaks/More Equipment Sets/Prefabs/ExtraEquipmentTabs.prefab
+    hash: 42D6941863EFC15B27F1FEC00B821CB8B3D056B3C6A11249AEE983021E431E2D
+  - path: Assets/ck-tweaks/More Equipment Sets/Shaders/UISpriteAmplify.shader
+    hash: 31745627780BCAA343583410735BE726A2D54196FEC904E109FED8041DF3FB81
+  - path: Assets/ck-tweaks/More Equipment Sets/Textures/45.png
+    hash: 3BD2FFCE8A709753761C95B36BB7F4313E3C216FDE22E7082D87355EB1524469
+  - path: Assets/ck-tweaks/More Equipment Sets/Textures/crafting_ui_tabs.png
+    hash: BC9ECEF8063BD0A0249190D5FE9BBD4E0FC0BB68F678033FCDB5D4140D8D1EFE
+  - path: Assets/ck-tweaks/More Equipment Sets/Textures/white_faded_spot.png
+    hash: A4C503DE805CB420D54EB30E04FEB6F30E6CAA06E2298CA0850147020B1B2A1E
+  lastBuildLinux: 1
