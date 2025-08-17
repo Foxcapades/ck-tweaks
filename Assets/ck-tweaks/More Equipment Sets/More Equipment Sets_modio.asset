@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d83df2ae64ce1e94f9c006b9d326bf02, type: 3}
   m_Name: More Equipment Sets_modio
   m_EditorClassIdentifier: 
-  modId: 0
+  modId: 5176439
   modSettings: {fileID: 11400000, guid: f3aeb19a8b3281b32a6ce457ec2c7674, type: 2}
   logo: {fileID: 0}
-  summary: 
+  summary: Adds 2 additional equipment preset tabs.
