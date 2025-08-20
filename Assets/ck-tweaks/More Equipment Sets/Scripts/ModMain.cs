@@ -1,19 +1,25 @@
+using HarmonyLib;
 using PugMod;
 using Unity.Entities;
 using UnityEngine;
 
-#nullable enable
 namespace FXCPDS.Content.MoreEquipment {
-  public class MoreEquipmentSets: IMod {
-    private const string ModName = "extra-equipment";
-    private const string version = "v1.0.0";
-    private static GameObject? prefab;
+  [HarmonyPatch]
+  public class ModMain: IMod {
+    public const string ModName = "extra-equipment";
+    public const long ModID = 5176439;
+    private const string Version = "v1.0.0";
+
+    private static GameObject prefab;
 
     internal static void Log(string message) =>
       Debug.Log($"[{ModName}] {message}");
 
     public void EarlyInit() {
-      Log($"init {version}");
+      Log($"init {Version}");
+      ConfigManager.register();
+
+      API.ModLoader.ApplyHarmonyPatch(ModID, typeof(Patches));
     }
 
     public void Init() {
@@ -21,13 +27,7 @@ namespace FXCPDS.Content.MoreEquipment {
       API.Authoring.OnObjectTypeAdded += OnObjectTypeAdded;
     }
 
-    public void Shutdown() {
-      // Safety measure to prevent NP crash on mod uninstallation.
-      Manager.main.allPlayers.ForEach(p => {
-        if (p.activeEquipmentPreset > 2)
-          p.SetActiveEquipmentPreset(0);
-      });
-    }
+    public void Shutdown() {}
 
     public void ModObjectLoaded(Object obj) {
       if (obj is GameObject { name: "ExtraEquipmentTabs" } o)
@@ -36,15 +36,21 @@ namespace FXCPDS.Content.MoreEquipment {
 
     public void Update() {}
 
-    private static void OnObjectTypeAdded(Entity entity, GameObject _, EntityManager manager) {
+    private static void OnObjectTypeAdded(Entity entity, GameObject go, EntityManager manager) {
       if (!manager.HasBuffer<EquipmentPresetsBuffer>(entity))
         return;
 
+      Log($"banana {go.name}");
+
       var presetsBuffer = manager.GetBuffer<EquipmentPresetsBuffer>(entity);
 
+      Log($"apple {presetsBuffer.Length}");
+
       // already configured.
-      if (presetsBuffer.Length > 3)
+      if (presetsBuffer.Length >= 5)
         return;
+
+      Log("extending equipment preset buffer");
 
       var objectsBuffer = manager.GetBuffer<ContainedObjectsBuffer>(entity);
 
