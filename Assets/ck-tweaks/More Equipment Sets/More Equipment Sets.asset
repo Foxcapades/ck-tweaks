@@ -22,10 +22,18 @@ MonoBehaviour:
     requiredOn: 3
     files:
     - path: Localization/Localization.csv
-    - path: Scripts/Scripts/MoreEquipmentSets.cs
+    - path: Scripts/Scripts/SaveSystem.cs
+    - path: Scripts/Scripts/Patches.cs
+    - path: Scripts/Scripts/ModMain.cs
+    - path: Scripts/Scripts/MESSavedCD.cs
+    - path: Scripts/Scripts/MESLoadedCD.cs
+    - path: Scripts/Scripts/LoadSystem.cs
     - path: Scripts/Scripts/ExtendedTab.cs
-    - path: Bundles/More Equipment Sets_Windows.assetbundle
+    - path: Scripts/Scripts/ConfigManager.cs
+    - path: Scripts/Generated/LoadSystem__System_18161071600.g.cs
+    - path: Scripts/Generated/SaveSystem__System_1891240010.g.cs
     - path: Bundles/More Equipment Sets_Linux.assetbundle
+    - path: Bundles/More Equipment Sets_Windows.assetbundle
     dependencies: []
   modPath: Assets/ck-tweaks/More Equipment Sets
   forceReimport: 1
@@ -40,9 +48,9 @@ MonoBehaviour:
   - path: Assets/ck-tweaks/More Equipment Sets/Localization/Localization.csv
     hash: B5A0A9C83714147007043575831BBF7188409B2D97763D776AE30328075FFA96
   - path: Assets/ck-tweaks/More Equipment Sets/More Equipment Sets.asset
-    hash: 67ECC921D3ADB8BA60336BAE0A0E7DE55EFCA3C91F8E34090A212B83DAD883EA
+    hash: 55D8957A466522481CD5808D442B8967A94DE42EDCD7E2F5DB353F812428398E
   - path: Assets/ck-tweaks/More Equipment Sets/More Equipment Sets_modio.asset
-    hash: 3E34E4F568417310F8AA21D6C0BAE8B01639785F87DF5E3674C81ADB689A39E9
+    hash: BEBE6AE582C0B6D5855EF269A83160CA405A58302A6EBA25DE556C371D3A53EA
   - path: Assets/ck-tweaks/More Equipment Sets/Prefabs/ExtraEquipmentTabs.prefab
     hash: 783A64D0B1C27A71E8124F395DE035DBD183D526F8EFA35C8ADC89072E3C2B20
   - path: Assets/ck-tweaks/More Equipment Sets/Textures/45.png

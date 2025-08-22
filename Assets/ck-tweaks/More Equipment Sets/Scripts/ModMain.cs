@@ -1,5 +1,6 @@
 using HarmonyLib;
 using PugMod;
+using Unity.Collections;
 using Unity.Entities;
 using UnityEngine;
 
@@ -19,7 +20,7 @@ namespace FXCPDS.Content.MoreEquipment {
       Log($"init {Version}");
       ConfigManager.register();
 
-      API.ModLoader.ApplyHarmonyPatch(ModID, typeof(Patches));
+      // API.ModLoader.ApplyHarmonyPatch(ModID, typeof(Patches));
     }
 
     public void Init() {
@@ -40,17 +41,11 @@ namespace FXCPDS.Content.MoreEquipment {
       if (!manager.HasBuffer<EquipmentPresetsBuffer>(entity))
         return;
 
-      Log($"banana {go.name}");
-
       var presetsBuffer = manager.GetBuffer<EquipmentPresetsBuffer>(entity);
-
-      Log($"apple {presetsBuffer.Length}");
 
       // already configured.
       if (presetsBuffer.Length >= 5)
         return;
-
-      Log("extending equipment preset buffer");
 
       var objectsBuffer = manager.GetBuffer<ContainedObjectsBuffer>(entity);
 
